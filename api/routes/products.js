@@ -24,7 +24,6 @@ router.post('/', (req, res, next) => {
         .catch(err => {
             console.log(err)
         })
-        console.log(process.env.MONGO_ATLAS_PW)
     res.status(201).json({
         message: 'Handling POST request to /products',
         createdProduct: product
